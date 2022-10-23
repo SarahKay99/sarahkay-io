@@ -1,0 +1,83 @@
+:root {
+    --text-color: white;
+    --link-color: orange;
+    --background-color: pink;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.red {
+    --text-color: white;
+    --link-color: #ffcccb;
+    --background-color: red;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.pink {
+    --text-color: white;
+    --link-color: #FF7A00;
+    --background-color: #8D3163;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.orange {
+    --text-color: white;
+    --link-color: #ffcccb;
+    --background-color: #FF7A00;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.yellow {
+    --text-color: rgb(100, 94, 15);
+    --link-color: #49421e;
+    --background-color: yellow;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.green {
+    --text-color: white;
+    --link-color: lightgreen;
+    --background-color: green;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.blue {
+    --text-color: rgb(100, 94, 15);
+    --link-color: #49421e;
+    --background-color: blue;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.darkBlue {
+    --text-color: rgb(100, 94, 15);
+    --link-color: lightblue;
+    --background-color: darkblue;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.purple {
+    --text-color: rgb(100, 94, 15);
+    --link-color: violet;
+    --background-color: rgb(86, 3, 116);
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.black {
+    --text-color: rgb(83, 77, 170);
+    --link-color: rgb(114, 114, 114);
+    --background-color: black;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.grey {
+    --text-color: rgb(71, 63, 224);
+    --link-color: lightblue;
+    --background-color: darkblue;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
+
+.white {
+    --text-color: rgb(87, 87, 87);
+    --link-color: grey;
+    --background-color: white;
+    --mask-color: rgba(255, 132, 0, 0.337);
+}
