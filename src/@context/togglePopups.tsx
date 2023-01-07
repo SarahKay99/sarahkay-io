@@ -11,10 +11,19 @@ function TogglePopupsProvider({
 }): ReactElement {
 
     const [showingSettings, setShowingSettings] = useState(false);
+    const [showingColorDropdown, setShowingColorDropdown] = useState(false);
 
     const toggleShowingSettings = (e: any) => {
         e.preventDefault();
+
+        // close both dropdowns
+        if (showingColorDropdown) setShowingColorDropdown(false);
         setShowingSettings(!showingSettings);
+    }
+
+    const toggleShowingColorDropdown = (e: any) => {
+        e.preventDefault();
+        setShowingColorDropdown(!showingColorDropdown);
     }
 
     useEffect(() => {
@@ -27,7 +36,9 @@ function TogglePopupsProvider({
             value={
                 {
                     showingSettings: showingSettings,
-                    toggleShowingSettings: toggleShowingSettings
+                    showingColorDropdown: showingColorDropdown,
+                    toggleShowingSettings: toggleShowingSettings,
+                    toggleShowingColorDropdown: toggleShowingColorDropdown
                 } as TogglePopupsProviderValue
             }
         >

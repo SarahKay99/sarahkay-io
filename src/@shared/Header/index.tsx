@@ -1,10 +1,11 @@
+import React from "react"
+import { useNavigate } from "react-router-dom";
+
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-empty-pattern */
 import { useTogglePopups } from "../../@context/togglePopups";
-import React from "react"
-import { useNavigate } from "react-router-dom";
-import { Mask, HeaderWrapper } from "./index.style";
+import { HeaderWrapper, Mask } from "./index.style";
 
 interface HeaderProps {
 
@@ -18,7 +19,7 @@ function Header({}: HeaderProps) {
     return <Mask>
         <HeaderWrapper>
             <div className="image">
-                <a onClick={(e) => {navigate('/about', {replace: true})}}>ABOUT</a>
+                <a className="text" onClick={(e) => {navigate('/about', {replace: true})}}>ABOUT</a>
             </div>
 
             <div className="image">
@@ -31,9 +32,6 @@ function Header({}: HeaderProps) {
 
             <div className="image">
                 <a onClick={(e) => {navigate('/contact', {replace: true})}}>CONTACT</a>
-            </div>
-
-            <div className="image">
                 <a onClick={(e) => {toggleShowingSettings(e)}}>
                     <img src="settings.png" />
                 </a>

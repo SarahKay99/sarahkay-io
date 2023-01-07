@@ -1,7 +1,6 @@
 import React from "react"
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
-import ThemeProvider, { useTheme } from "./@context/theme"
 
 import AboutPage from "./About";
 import BlogPage from "./Blog";
@@ -12,14 +11,15 @@ import PortfolioPage from "./Portfolio";
 import './@styles/styles.css';
 import './App.css';
 import TogglePopupsProvider from "./@context/togglePopups";
+import SettingsProvider, { useSettings } from "./@context/settings";
 
 function App() {
 
-  const { colorTheme } = useTheme();
+  const { colorTheme } = useSettings();
 
   return (
       <TogglePopupsProvider>
-        <ThemeProvider>
+        <SettingsProvider>
         <Router>
           <div className={`App ${colorTheme}`}>
             <Routes>
@@ -31,7 +31,7 @@ function App() {
             </Routes>
           </div>
         </Router>
-        </ThemeProvider>
+        </SettingsProvider>
       </TogglePopupsProvider>
   );
 }

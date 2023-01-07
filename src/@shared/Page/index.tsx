@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react"
 
 import Header from "../Header"
+import Settings from "../Settings"
 import { PageWrapper } from "./index.style"
 
 interface PageProps {
@@ -18,9 +19,12 @@ function Page({
     description
 }: PageProps) {
     return <PageWrapper>
-        <Header>
-            {children}
-        </Header>
+        <Header />
+
+        <div className="settingsLocation">
+            <Settings />
+        </div>
+        {children}
     </PageWrapper>
 }
 

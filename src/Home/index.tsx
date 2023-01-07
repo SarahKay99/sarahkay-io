@@ -1,26 +1,40 @@
 import React from "react"
+import Carousel from "src/@shared/Carousel";
 import Page from "src/@shared/Page";
+import SocialMediaButtons from "src/@shared/SocialMediaButtons";
 
 import { HomePageWrapper } from "./index.style"
+
+// TODO: Build a very basic Django backend to keep track of the photos securely.
+const placeholderItems = [
+    "",
+    "",
+    ""
+]
 
 function HomePage() {
     return <Page uri={"/"}>
         <HomePageWrapper>
-            Hi! My name is Sarah. I'm an Australian software developer and artist. On this site you can find <a>my creations</a>, <a>my development portfolio</a> and <a>my opinions</a>. 
+            <SocialMediaButtons 
+                size="7vw" 
+                direction="vertical" 
+                margin={"0vw 6vw 0vw 0vw"} 
+            />
+            <Carousel 
+                items={placeholderItems}
+                border={"solid white 3px"}
+            />
 
-            Some things I like doing other than software development are...
-            <ul>
-                <li>walking</li>
-                <li>taking photos of nature</li>
-                <li>surfing</li>
-                <li>drawing</li>
-                <li>playing music</li>
-                <li>travelling, wandering</li>
-                <li>astrology, spirituality</li>
-                <li>doomsday prepping</li>
-            </ul>
+            <h1 className="title">Sarah Kay</h1>
+            <h2 className="subtitle">Software Developer, Artist</h2>
 
-            If you want to <a href="/">hire my services</a>, or if you want to surf together, <a href="">hit me up 😈</a>
+            <a href="" target="_blank">Crafts Store</a>
+            <a href="/portfolio">Development Portfolio</a>
+            <a href="/about">Blog</a>
+            <a href="/about">About Me</a>
+            
+            <a href="/contact" target="_blank" className="contactMe">Contact Me</a>
+
         </HomePageWrapper>
     </Page>
 }
