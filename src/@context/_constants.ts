@@ -1,5 +1,14 @@
 import { Color } from "./_types"
 
+
+// TODO: Build a very basic Django backend to keep track of the photos securely.
+export const placeholderItems = [
+    "",
+    "",
+    ""
+]
+
+
 export const colors: Color[] = [
     {name: 'red', colorCode: ''},
     {name: 'pink', colorCode: '#ED0F87'},
