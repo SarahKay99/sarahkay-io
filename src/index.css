@@ -31,7 +31,12 @@ a:visited {
 }
 
 a:active {
-  text-decoration: underline; 
+  text-decoration: none; 
+}
+
+h1 {
+  margin: 0;
+  font-family: PressStart2P;
 }
 
 code {

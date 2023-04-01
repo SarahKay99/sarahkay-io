@@ -3,23 +3,72 @@ import { Color } from "./_types"
 
 // TODO: Build a very basic Django backend to keep track of the photos securely.
 export const placeholderItems = [
-    "",
-    "",
-    ""
+    "pfp 2.png",
+    "pfp.jpg"
 ]
 
 
 export const colors: Color[] = [
-    {name: 'red', colorCode: ''},
-    {name: 'pink', colorCode: '#ED0F87'},
-    {name: 'orange', colorCode: ''},
-    {name: 'green', colorCode: ''},
-    {name: 'blue', colorCode: ''},
-    {name: 'dark blue', colorCode: ''},
-    {name: 'light purple', colorCode: ''},
-    {name: 'black', colorCode: ''},
-    {name: 'grey', colorCode: ''},
-    {name: 'white', colorCode: ''}
+    {
+        name: 'red', 
+        colorCode: '',
+        emoji: '',
+        emojiUrl: ''
+    },
+    {
+        name: 'pink', 
+        colorCode: '#ED0F87',
+        emoji: '🌺',
+        emojiUrl: 'https://emojipedia.org/emoji/%F0%9F%8C%BA/#:~:text=Unicode%20details%20for%20Hibiscus%20(%F0%9F%8C%BA,U%2B1F33A'
+    },
+    {
+        name: 'orange', 
+        colorCode: '',
+        emoji: '',
+        emojiUrl: ''
+    },
+    {
+        name: 'green', 
+        colorCode: '',
+        emoji: '',
+        emojiUrl: ''
+    },
+    {
+        name: 'blue', 
+        colorCode: '',
+        emoji: '',
+        emojiUrl: ''
+    },
+    {
+        name: 'dark blue', 
+        colorCode: '',
+        emoji: '',
+        emojiUrl: ''
+    },
+    {
+        name: 'light purple', 
+        colorCode: '',
+        emoji: '',
+        emojiUrl: ''
+    },
+    {
+        name: 'black', 
+        colorCode: '',
+        emoji: '',
+        emojiUrl: ''
+    },
+    {
+        name: 'grey', 
+        colorCode: '',
+        emoji: '',
+        emojiUrl: ''
+    },
+    {
+        name: 'white', 
+        colorCode: '',
+        emoji: '',
+        emojiUrl: ''
+    }
 ]
 
 export const colorNames = [
@@ -67,9 +116,10 @@ export const darkBluePlaylist = [
 ]
 
 export const blackPlaylist = [
+    'Sadness is Rebellion',
+    'MAN',
+    'Lullaby',
     'Disenchanted',
-    'Down in a Hole',
-    'Lullaby'
 ]
 
 export const orangePlaylist = [
@@ -82,6 +132,11 @@ export const darkRedPlaylist = [
     'Man in the Box', 
     'Desert Song',
     'Demolition Lovers'
+]
+
+export const purplePlaylist = [
+    'Babes of the Late 80s',
+    'Boulevard of Broken Dreams (80s)'
 ]
 
 export const songs = [

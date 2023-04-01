@@ -27,4 +27,6 @@ export interface SettingsProviderValue {
 export interface Color {
     name: string
     colorCode: string
+    emoji: string
+    emojiUrl?: string
 }

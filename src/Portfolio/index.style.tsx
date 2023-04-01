@@ -1,5 +1,5 @@
 import styled from "styled-components"
 
-export const PortfolioWrapper = styled.div`
+export const PortfolioPageWrapper = styled.div`
     
 `

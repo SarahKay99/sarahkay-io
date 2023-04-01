@@ -2,11 +2,12 @@ import styled from "styled-components"
 
 export const HomePageWrapper = styled.div`
     display: flex;
-    padding: 4vw 6vw 4vw 6vw;
+    align-items: center;
+    padding: 2vw 6vw 4vw 6vw;
     color: var(--text-color);
 
     .mainText {
-
+        margin: 0vw 0vw 0vw 4vw;
     }
 
     .links {

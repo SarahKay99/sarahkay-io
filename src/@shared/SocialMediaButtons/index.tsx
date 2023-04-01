@@ -8,15 +8,22 @@ import { SocialMediaButtonsWrapper } from "./index.style"
 interface SocialMediaButtonsProps {
     size: string
     margin?: string
+    alignment?: string
     direction: 'vertical' | 'horizontal'
 }
 
 function SocialMediaButtons({
     size,
     margin,
+    alignment,
     direction
 }: SocialMediaButtonsProps) {
-    return <SocialMediaButtonsWrapper size={size} direction={direction} margin={margin}>
+    return <SocialMediaButtonsWrapper 
+        size={size} 
+        direction={direction} 
+        margin={margin}
+        alignment={alignment}
+    >
         <a href="https://github.com/SarahKay99" target="_blank"><img src="github.png"/></a>
         <a href="https://www.linkedin.com/in/sarah-kay-921781197/" target="_blank"><img src="linkedIn.png"/></a>
         <a href="https://www.instagram.com/sarahkay.js/" target="_blank"><img src="instagram.png"/></a>

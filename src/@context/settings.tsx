@@ -3,13 +3,20 @@ import { Color, SettingsProviderValue } from './_types'
 
 const SettingsContext = createContext({} as SettingsProviderValue)
   
+const pink: Color = {
+    name: 'pink', 
+    colorCode: '#ED0F87',
+    emoji: '🌺',
+    emojiUrl: 'https://emojipedia.org/emoji/%F0%9F%8C%BA/#:~:text=Unicode%20details%20for%20Hibiscus%20(%F0%9F%8C%BA,U%2B1F33A'
+}
+
 function SettingsProvider({
     children
 }: {
     children: ReactNode
 }): ReactElement {
 
-    const [colorTheme, setColorTheme] = useState<Color>({name: 'pink', colorCode: '#ED0F87'});
+    const [colorTheme, setColorTheme] = useState<Color>(pink);
     const [chosenFont, setChosenFont] = useState<'Press Start 2P'>('Press Start 2P');
     const [chosenLanguage, setChosenLanguage] = useState<'ENG' | 'ESP' | 'POR'>('ENG');
     const [changeColorThemeWithSearchToggled, setChangeColorThemeWithSearch] = useState<boolean>(false);

@@ -3,9 +3,11 @@ import styled from "styled-components"
 export const SocialMediaButtonsWrapper = styled.div<{
     size: string
     direction: 'vertical' | 'horizontal'
+    alignment: string
     margin?: string
 }>`
     display: flex;
+    align-self: ${(props: any) => props.alignment ? props.alignment : ''};
     flex-direction: ${(props: any) => 
         props.direction === 'vertical' ? 'column' 
         : props.direction === 'horizontal' && 'row'

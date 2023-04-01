@@ -1,3 +1,4 @@
+import { useSettings } from "../../@context/settings";
 import React, { useState } from "react"
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -9,9 +10,11 @@ interface CheckboxProps {
 }
 
 function Checkbox({}: CheckboxProps) {
+    const {colorTheme} = useSettings();
+    
     const [checked, setChecked] = useState<boolean>();
     
-    return <CheckboxWrapper>
+    return <CheckboxWrapper color={colorTheme.colorCode}>
     </CheckboxWrapper>
 }
 
